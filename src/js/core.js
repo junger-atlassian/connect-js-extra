@@ -19,6 +19,8 @@ try {
 catch (e) {}
 
 validatorRegister.register([‘min’, ‘max’], minOrMax); //AUI-prefixed attribute is deprecated as of 5.9.0  validatorRegister.register(‘[min],[max]’, minOrMax);  // Takes an input date string and related date format, and rebuilds a new date
+  +  function reconstructDateMatches(date, DateFormat) {
+// We loop a maximum of two times to test with/without leading zeroes  var prependZeroPermutations = [
 
 function makeBitbucketChangelogUrl (version) {
     var baseUrl = 'https://bitbucket.org/atlassian/aui/src/master/changelog.md#markdown-header-';
